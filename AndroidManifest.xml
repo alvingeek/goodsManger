@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="tian.biye"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
+
+    <application android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <activity android:name=".view.StoreManagementActivity"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.UserRegister"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".view.MenuDemo"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Tianjiag"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Tianjiak"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Chaxung"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Chaxunk"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Chaxunr"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugair"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaic"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugair1"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaic1"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Shanchur"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Chaxunc"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugai"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Yonghu"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Shanchus"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Kucun"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugais"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugais1"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaik"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaig"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaik1"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Xiugaig1"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Chaxuns"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Shanchug"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Shanchuk"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Shanchuc"
+
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Tianjiar"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Tianjiac"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".view.Tianjias"
+                  android:theme="@android:style/Theme.DeviceDefault.Dialog"
+                  android:screenOrientation="landscape"/>
+    </application>
+</manifest>

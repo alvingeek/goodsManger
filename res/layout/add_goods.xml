@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:stretchColumns="1"
+             android:id="@+id/sss">
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="1"
+            android:padding="5dip"
+            android:text="Row1"/>
+
+        <TextView
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="1"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dip"
+            android:text="商品名称:"
+            android:id="@+id/labelGoodsName"/>
+
+        <TextView
+            android:padding="3dip"
+            android:text="Row12"/>
+
+        <TextView
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="2"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_column="1"
+            android:padding="3dip"
+            android:text="Row13"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_column="2"/>
+    </TableRow>
+</TableLayout>

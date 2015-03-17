@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/shangp"
+             android:shrinkColumns="0"
+             android:stretchColumns="1">
+
+    <TableRow android:layout_width="fill_parent"
+              android:layout_marginLeft="2.0dip"
+              android:layout_marginRight="2.0dip"
+              android:paddingBottom="8.0dip"
+              android:paddingTop="4.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:text="商品名称："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTxt_addGoods_name"
+            android:layout_column="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginRight="17dip"/>
+
+    </TableRow>
+
+
+    <TableRow android:layout_width="fill_parent"
+              android:layout_marginLeft="2.0dip"
+              android:layout_marginRight="2.0dip"
+              android:paddingBottom="8.0dip"
+              android:paddingTop="4.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:text="商品类别："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTxt_addGoods_type"
+            android:layout_column="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginRight="17dip"/>
+
+    </TableRow>
+    <TableRow android:layout_width="fill_parent"
+                             android:layout_marginLeft="2.0dip"
+                             android:layout_marginRight="2.0dip"
+                             android:paddingBottom="8.0dip"
+                             android:paddingTop="4.0dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:includeFontPadding="false"
+        android:paddingLeft="17dip"
+        android:paddingRight="17dip"
+        android:text="计量单位："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxt_addGoods_unit"
+        android:layout_column="1"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginRight="17dip"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_width="fill_parent"
+              android:layout_marginLeft="2.0dip"
+              android:layout_marginRight="2.0dip"
+              android:paddingBottom="8.0dip"
+              android:paddingTop="4.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:text="进价："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTxt_addGoods_priceIn"
+            android:layout_column="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginRight="17dip"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+              android:layout_marginLeft="2.0dip"
+              android:layout_marginRight="2.0dip"
+              android:paddingBottom="8.0dip"
+              android:paddingTop="4.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:text="售价："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTxt_addGoods_priceOut"
+            android:layout_column="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginRight="17dip"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+              android:layout_marginLeft="2.0dip"
+              android:layout_marginRight="2.0dip"
+              android:paddingBottom="8.0dip"
+              android:paddingTop="4.0dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dip"
+            android:paddingRight="17dip"
+            android:text="商品数量："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edTxt_addGoods_sum"
+            android:layout_column="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginRight="17dip"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_span="2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_column="0">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:id="@+id/btn_addGoods_return"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:id="@+id/btn_addGoods_save"/>
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

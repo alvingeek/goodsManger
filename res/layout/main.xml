@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/cang1"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edi1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180sp"
+        android:hint="请输入用户名"
+        android:singleLine="true"
+        android:textColor="@drawable/gaoliang" />
+
+    <TextView
+        android:id="@+id/text2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edi1"
+        android:layout_toLeftOf="@id/edi1"
+        android:paddingTop="7sp"
+        android:text="用户名:"
+        android:textColor="@android:color/black"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/edi2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edi1"
+        android:hint="请输入密码"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="@drawable/gaoliang" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edi2"
+        android:layout_toLeftOf="@id/edi2"
+        android:paddingTop="6dip"
+        android:text="密    码:"
+        android:textColor="@android:color/black"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edi2"
+        android:layout_below="@id/edi2"
+        android:onClick="onload"
+        android:text="登陆" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edi2"
+        android:layout_toRightOf="@id/btn1"
+        android:onClick="onres"
+        android:text="注册" />
+
+
+</RelativeLayout>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/jibenxinxi"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="50sp"
+            android:onClick="onshangpin"
+            android:text="商品信息"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/kucunguanli"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jibenxinxi"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="10sp"
+            android:onClick="onkehu"
+            android:text="客户信息" />
+
+        <Button
+            android:id="@+id/xinxichaxun"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kucunguanli"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="10sp"
+            android:onClick="ongongyingshang"
+            android:text="供应商信息" />
+
+        <Button
+            android:id="@+id/tianjia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="ontianjias"
+            android:text="添加商品"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shanchu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjia1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="shanchus"
+            android:text="删除商品"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/xiugai1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="xiugais"
+            android:text="修改商品"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/chaxun1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiugai1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="chaxuns"
+            android:text="查询商品"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/tianjia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="tianjiak"
+            android:text="添加客户"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shanchu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjia1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="shanchuk"
+            android:text="删除客户"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/xiugai2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="xiugaik"
+            android:text="修改客户"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/chaxun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiugai1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="chaxunk"
+            android:text="查询客户"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/tianjia3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="tianjiag"
+            android:text="添加供应商"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shanchu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjia1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="shanchug"
+            android:text="删除供应商"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/xiugai3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="xiugaig"
+            android:text="修改供应商"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/chaxun3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiugai1"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/kucunguanli"
+            android:onClick="chaxung"
+            android:text="查询供应商"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/li2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doit"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ruku"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="80sp"
+            android:onClick="onruku"
+            android:text="商品入库" />
+
+        <Button
+            android:id="@+id/chuku"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ruku"
+            android:layout_marginLeft="100sp"
+            android:onClick="onchuku"
+            android:text="商品出库" />
+
+        <Button
+            android:id="@+id/tianjia4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="tianjiar"
+            android:text="添加入库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shanchu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjia4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="shanchur"
+            android:text="删除入库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/xiugai4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="xiugair"
+            android:text="修改入库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/chaxun4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiugai4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="chaxunruku"
+            android:text="查询入库"
+
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/tianjia5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="tianjiac"
+            android:text="添加出库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/shanchu5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tianjia4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="shanchuc"
+            android:text="删除出库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/xiugai5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shanchu4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="xiugaic"
+            android:text="修改出库"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/chaxun5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiugai4"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@id/ruku"
+            android:onClick="chaxunc"
+            android:text="查询出库"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/li3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/serach"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/jibenxinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180sp"
+            android:layout_marginTop="100sp"
+            android:onClick="kucun"
+            android:text="库存信息查询"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/yonghu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180sp"
+            android:layout_marginTop="80sp"
+            android:onClick="yonghu"
+            android:text="用户管理"
+
+            />
+
+        <Button
+            android:id="@+id/mima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180sp"
+            android:onClick="mima"
+            android:text="修改密码"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70sp"
+            android:text="本软件只是初步实现了单机的仓库管理操作。今后会考虑使用网络编程。做到移动联网实时办公的功能。
+本软件还有很多不足的地方，希望老师们提出宝贵意见
+    作者：田志远"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</TabHost>
